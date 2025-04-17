@@ -29,7 +29,7 @@ import {
     ensureArray,
     nvl
 } from './utils.js';
-import isPlainObject from 'is-plain-object';
+import { isPlainObject } from 'is-plain-object';
 import HTML_BOX from './acolorpicker.html';
 
 const VERSION = '1.2.2';
