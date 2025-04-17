@@ -550,6 +550,7 @@ class ColorPicker {
                             // aggiungo il colore e triggero l'evento 'oncoloradd'
                             addColorToPalette(rgbToHex(this.R, this.G, this.B), e.target, true);
                         }
+                        e.preventDefault();
                     } else if (/a-color-picker-palette-color/.test(e.target.className)) {
                         if (e.shiftKey) {
                             // rimuovo il colore e triggero l'evento 'oncolorremove'
@@ -559,6 +560,7 @@ class ColorPicker {
                             // devo usare il valore hex originale
                             this.onValueChanged(COLOR, e.target.getAttribute('data-color'));
                         }
+                        e.preventDefault();
                     }
                 });
             } else {
